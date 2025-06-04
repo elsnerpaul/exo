@@ -393,6 +393,55 @@ model_cards: ModelCardCollection = {
     },
   ),
   ### qwen
+  "Qwen3-0.6b": ModelCard(
+    pretty_name="Qwen 3 0.6B",
+    layers=28,
+    repo={
+      "MLXDynamicShardInferenceEngine": "mlx-community/Qwen3-0.6B-4bit-DWQ-053125",
+    },
+  ),
+  "Qwen3-1.7b": ModelCard(
+    pretty_name="Qwen 3 1.7B",
+    layers=28,
+    repo={
+      "MLXDynamicShardInferenceEngine": "mlx-community/Qwen3-1.7B-4bit-DWQ-053125",
+    },
+  ),
+  "Qwen3-4b": ModelCard(
+    pretty_name="Qwen 3 4B",
+    layers=36,
+    repo={
+      "MLXDynamicShardInferenceEngine": "mlx-community/Qwen3-4B-4bit-DWQ-053125",
+    },
+  ),
+  "Qwen3-8b": ModelCard(
+    pretty_name="Qwen 3 8B",
+    layers=36,
+    repo={
+      "MLXDynamicShardInferenceEngine": "mlx-community/Qwen3-8B-4bit-DWQ-053125",
+    },
+  ),
+  "Qwen3-14b": ModelCard(
+    pretty_name="Qwen 3 14B",
+    layers=40,
+    repo={
+      "MLXDynamicShardInferenceEngine": "mlx-community/Qwen3-14B-4bit-DWQ-053125",
+    },
+  ),
+  "Qwen3-30b": ModelCard(
+    pretty_name="Qwen 3 30B",
+    layers=48,
+    repo={
+      "MLXDynamicShardInferenceEngine": "mlx-community/Qwen3-30B-A3B-4bit-DWQ-053125",
+    },
+  ),
+  "Qwen3-235b": ModelCard(
+    pretty_name="Qwen 3 235B",
+    layers=94,
+    repo={
+      "MLXDynamicShardInferenceEngine": "mlx-community/Qwen3-235B-A22B-4bit-DWQ-053125",
+    },
+  ),
   "qwen-2.5-0.5b": ModelCard(
     pretty_name="Qwen 2.5 0.5B",
     layers=28,
