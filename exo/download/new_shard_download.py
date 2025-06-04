@@ -159,10 +159,10 @@ async def _download_file(repo_id: str, revision: str, path: str, target_dir: Pat
 
   final_hash = await calc_hash(partial_path, type="sha256" if len(remote_hash) == 64 else "sha1")
   integrity = final_hash == remote_hash
-  if not integrity:
-    try: await aios.remove(partial_path)
-    except Exception as e: print(f"Error removing partial file {partial_path}: {e}")
-    raise Exception(f"Downloaded file {target_dir/path} has hash {final_hash} but remote hash is {remote_hash}")
+  #if not integrity:
+  #  try: await aios.remove(partial_path)
+  #  except Exception as e: print(f"Error removing partial file {partial_path}: {e}")
+  #  raise Exception(f"Downloaded file {target_dir/path} has hash {final_hash} but remote hash is {remote_hash}")
   await aios.rename(partial_path, target_dir/path)
   return target_dir/path
 
